@@ -43,13 +43,13 @@ char *strip_upper(char *string) {
     // loops through each char and adds them to the new string only if they are letters and all in uppercase
     for (int i = 0; i < length; i++) {
         c = string[i];
-        if (c >= 65 && c <= 90) {
-            // uppercase, change c to lowercase and put in newstr
-            c = c + 32;
+        if (c >= 97 && c <= 122) {
+            // lowercase, change c to uppercase and put in newstr
+            c = c - 32;
             newstr[newstrlen] = c;
             newstrlen++;
-        } else if (c >= 97 && c <= 122) {
-            // lowercase, put c into newstr
+        } else if (c >= 65 && c <= 90) {
+            // uppercase, put c into newstr
             newstr[newstrlen] = c;
             newstrlen++;
         }
