@@ -1,5 +1,5 @@
 #include <stdio.h>
-#import "hashtable.h"
+#include "hashtable.h"
 
 // Initialise vars
 char **redactable;
